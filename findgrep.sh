@@ -10,4 +10,5 @@ if [ -z "$directory" ]; then
 fi
 if [ -z "$name" ]; then
 	name='*'
+fi
 find "$direcrory" -type f -print0 | xargs -0 grep -nH "$pattern"
